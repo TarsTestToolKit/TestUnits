@@ -6,7 +6,7 @@ import (
 
 	"github.com/TarsCloud/TarsGo/tars"
 
-	"github.com/TarsTestToolKit/TestUnits/golang/TestUnits"
+	"github.com/TarsTestToolKit/TestUnits/golang/tars-protocol/TestUnits"
 )
 
 func main() {

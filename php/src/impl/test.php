@@ -1,8 +1,8 @@
 <?php
 
-namespace php\impl;
+namespace PhpTars\impl;
 
-use php\servant\TestUnits\php\testObj\testServant;
+use PhpTars\servant\TestUnits\PhpTars\testObj\testServant;
 
 class test implements testServant
 {

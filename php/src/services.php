@@ -1,8 +1,8 @@
 <?php
 return [
     'testObj' => [
-        'home-api' => '\php\servant\TestUnits\php\testObj\testServant',
-        'home-class' => '\php\impl\test',
+        'home-api' => '\PhpTars\servant\TestUnits\PhpTars\testObj\testServant',
+        'home-class' => '\PhpTars\impl\test',
         'protocolName' => 'tars',
         'serverType' => 'tcp',
     ],
