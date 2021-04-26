@@ -2,7 +2,7 @@ const Tars = require("@tars/rpc");
 const Demo = require("./nodeImp").Demo;
 
 const APP_NAME = "TestUnits",
-  SERVER_NAME = "nodejs",
+  SERVER_NAME = "NodejsTars",
   OBJ_NAME = "testObj";
 let servantName = `${APP_NAME}.${SERVER_NAME}.${OBJ_NAME}`;
 let impMap = {
