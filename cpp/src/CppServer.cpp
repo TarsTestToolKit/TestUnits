@@ -12,7 +12,7 @@ CppServer::initialize()
     //initialize application here:
     //...
 
-    addServant<HelloImp>(ServerConfig::Application + "." + ServerConfig::ServerName + ".HelloObj");
+    addServant<HelloImp>(ServerConfig::Application + "." + ServerConfig::ServerName + ".testObj");
 }
 /////////////////////////////////////////////////////////////////
 void
