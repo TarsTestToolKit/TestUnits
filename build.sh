@@ -14,6 +14,7 @@ mv *.tgz /root/src/patches/CppTars.tgz
 
 # build golang
 cd /root/src/golang
+go env -w GOPROXY="https://goproxy.cn,direct"
 rm -rf *.tgz
 make && make tar
 mv *.tgz /root/src/patches/GoTars.tgz
