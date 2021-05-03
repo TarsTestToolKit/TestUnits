@@ -1,6 +1,38 @@
+#!/bin/sh
+rm -rf /root/src/patches/*.tar.gz
+rm -rf /root/src/patches/*.tgz
+rm -rf /root/src/patches/*.jar
 
-cd /root/ ; mkdir -p src/cpp/build; cd src/cpp/build; rm -rf CMakeCache.txt; cmake ..; make; make CppTars-tar;
-cd /root ; cd src/golang; make ; rm -rf *.tgz; make tar
-cd /root ; cd src/java ; mvn package
-cd /root ; cd src/nodejs; tars-deploy NodejsTest
-cd /root ; cd src/php; 
+# build cpp
+cd /root/src/cpp
+mkdir build
+cd build
+rm -rf *
+cmake ..
+make && make CppTars-tar
+mv *.tgz /root/src/patches/CppTars.tgz
+
+# build golang
+cd /root/src/golang
+rm -rf *.tgz
+make && make tar
+mv *.tgz /root/src/patches/GoTars.tgz
+
+# build java
+cd /root/src/java
+rm -rf target/*.jar
+mvn package
+mv *.jar /root/src/patches/JavaTars.jar
+
+# build nodejs
+cd /root/src/nodejs
+rm *.tgz
+tars-deploy NodejsTest
+mv *.tgz /root/src/patches/NodejsTars.tgz
+
+# build php
+cd /root/src/php/src
+rm -rf *.tar.gz
+composer install
+composer run deploy
+mv *.tar.gz /root/src/patches/PhpTars.tar.gz

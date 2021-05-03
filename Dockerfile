@@ -15,7 +15,7 @@ RUN apt install -y mysql-client git build-essential unzip make golang cmake flex
     #intall php tars
     && apt install -y php php-dev php-cli php-gd php-curl php-mysql \
     && apt install -y php-zip php-fileinfo php-redis php-mbstring tzdata git make wget \
-    && apt install -y build-essential libmcrypt-dev php-pear \
+    && apt install -y build-essential libmcrypt-dev php-pear composer\
     # Get and install nodejs
     && apt install -y nodejs npm \ 
     && npm install -g npm pm2 \
