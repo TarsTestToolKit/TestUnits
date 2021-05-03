@@ -22,7 +22,7 @@ mv *.tgz /root/src/patches/GoTars.tgz
 cd /root/src/java
 rm -rf target/*.jar
 mvn package
-mv *.jar /root/src/patches/JavaTars.jar
+mv target/*.jar /root/src/patches/JavaTars.jar
 
 # build nodejs
 cd /root/src/nodejs

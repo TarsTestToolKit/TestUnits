@@ -1,0 +1,9 @@
+.idea/**
+cpp/build/**
+golang/golang
+golang/golang.tgz
+java/target/**
+php/src/vendor/**
+patches/*.tgz
+patches/*.tar.gz
+patches/*.jar
