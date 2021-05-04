@@ -17,7 +17,7 @@ cd /root/src/golang
 go env -w GOPROXY="https://goproxy.cn,direct"
 rm -rf *.tgz
 make && make tar
-mv *.tgz /root/src/patches/GoTars.tgz
+mv *.tgz /root/src/patches/GolangTars.tgz
 
 # build java
 cd /root/src/java
