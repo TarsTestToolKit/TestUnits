@@ -29,7 +29,7 @@ public:
     /**
      *
      */
-    virtual string ping(const string &req, tars::TarsCurrentPtr current) { return "pong"; };
+    virtual string ping(const string &req, tars::TarsCurrentPtr current) { return req; };
 };
 /////////////////////////////////////////////////////
 #endif

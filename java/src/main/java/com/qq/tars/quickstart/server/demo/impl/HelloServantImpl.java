@@ -7,6 +7,6 @@ import com.qq.tars.spring.annotation.TarsServant;
 public class HelloServantImpl implements HelloServant {
 
     public String ping(String req) {
-        return "pong";
+        return req;
     }
 }
