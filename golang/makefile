@@ -1,5 +1,5 @@
 APP       := TestUnits
-TARGET    := golang
+TARGET    := GolangTars
 MFLAGS    :=
 DFLAGS    :=
 CONFIG    := client
