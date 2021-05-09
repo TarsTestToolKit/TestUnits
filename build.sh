@@ -28,7 +28,7 @@ mv target/*.jar /root/src/patches/JavaTars.jar
 # build nodejs
 cd /root/src/nodejs
 rm *.tgz
-tars-deploy NodejsTest
+tars-deploy NodejsTars
 mv *.tgz /root/src/patches/NodejsTars.tgz
 
 # build php
