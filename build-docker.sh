@@ -2,4 +2,4 @@
 
 # docker build . -t test-units
 
-docker run -v $(pwd):/root/src mcfranklee/tars-buildenv:latest sh -c /root/src/build.sh
+docker run -v $(pwd):/root/src tarscloud/compiler:latest sh -c /root/src/build.sh
